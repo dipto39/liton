@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+@font-face {
+  font-family: "GopherDisplay";
+  src: local("GopherDisplay"),
+    url("../../public/font/GopherDisplay-Regular.woff") format("truetype");
+}
+body{
+  font-family: GopherDisplay;
+  font-weight: normal;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+.hover_bg{
+  background: linear-gradient(180deg, #8B5CF6 0%, rgba(177, 142, 255, 0) 203.57%);
+}
+.social_bg{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.header-color{
+  box-shadow: 0px -0.6011079549789429px 0.4154379367828369px 0px rgba(255, 255, 255, 0.6) inset;
+box-shadow: 0px 1.6229915618896484px 1.8033239841461182px 0px rgba(255, 255, 255, 0.1) inset;
+
+box-shadow: 0px 0px 16.22991371154785px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
