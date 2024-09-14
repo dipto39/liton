@@ -60,7 +60,7 @@ const Header = () => {
         ref={ContentDiv}
         id="content"
       >
-        <section  className="my-28">     
+        <section className="my-28">     
           <Home />
         </section>
         <section  >

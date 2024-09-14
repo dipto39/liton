@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Manu = () => {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("/");
   const handleLinkClick = (section) => {
     setActiveSection(section);
     scrollToSection(section);

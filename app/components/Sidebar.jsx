@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaDownload } from "react-icons/fa";
 
 const Sidebar = () => {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("");
   useEffect(() => {
     window.location.hash = activeSection;
   }, [activeSection]);
