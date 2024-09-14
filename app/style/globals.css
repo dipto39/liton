@@ -12,6 +12,11 @@
   src: local("GopherDisplay"),
     url("../../public/font/GopherDisplay-Regular.woff") format("truetype");
 }
+@font-face {
+  font-family: "GeistRegular";
+  src:  url('../../public/font/Geist-Regular.ttf') format('truetype');
+
+}
 body{
   font-family: GopherDisplay;
   font-weight: normal;
@@ -32,4 +37,84 @@ box-shadow: 0px 0px 16.22991371154785px 0px rgba(0, 0, 0, 0.25);
 
 }
 
+.custom-shape {
+  clip-path: path("M0 4.00001C0 1.79087 1.79086 0 4 0H420C422.209 0 424 1.79086 424 4V464.731H196.116C183.015 464.731 171.011 457.415 165.008 445.77L147.549 411.909C134.616 386.826 98.8396 386.577 85.5584 411.477L67.0362 446.203C60.9532 457.607 49.08 464.731 36.1545 464.731H0V4.00001Z");
+}
+.custom-shape2 {
+  clip-path: path("M320 378H24C10.7452 378 0 367.255 0 354V24C0 10.7452 10.7452 0 24 0H378C391.255 0 402 10.7451 402 24V296C402 309.255 391.255 320 378 320H368C354.745 320 344 330.745 344 344V354C344 367.255 333.255 378 320 378Z");
+}
+
+.heading-text{
+  color: #FFF;
+  text-align:center;
+  text-shadow:0px 0px 16.23px rgba(0, 0, 0, 1);
+  font-size:58px;
+  font-weight:900;
+  line-height:100.5%;
+  opacity: 0.3;
+  letter-spacing:1.16px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px); /* For WebKit browsers */
+}
+.gradient-border-container {
+  position: relative;
+  padding: 2px; /* Adjust to match the thickness of the border */
+  border-radius: 8px; /* Adjust to match the border-radius you want */
+}
+
+.gradient-border-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #F24E1E99 60%, #E8FFF699 60%, #1ABCFE99 60%);
+  border-radius: inherit;
+  z-index: -1;
+  padding: 2px; /* Adjust to match the thickness of the border */
+  background-clip: padding-box;
+  border: 2px solid transparent; /* Ensure the gradient is on the border */
+}
+.download-button {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.custom-cursor {
+  cursor: url('/cursor.png'), auto; /* Use your cursor image */
+}
+
+.custom-border {
+
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust values for desired shadow */
+  color: white; /* Set text color */
+}
+
+/* styles.css or a CSS module */
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@keyframes borderImageAnimation {
+  0% {
+    border-image-source: radial-gradient(circle at 0% 50%, #081219, #081219, white);
+  }
+  50% {
+    border-image-source: radial-gradient(circle at 100% 50%, #081219, #081219, white);
+  }
+  100% {
+    border-image-source: radial-gradient(circle at 0% 50%, #081219, #081219, white);
+  }
+}
 
