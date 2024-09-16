@@ -9,78 +9,94 @@ import Education from "./components/Education";
 import Manu from "./components/Manu";
 import WorkFlow from "./components/WorkFlow";
 import { Footer } from "./components/Footer";
-
+import Navbar from "./components/Navbar";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Workdynamic from "./components/test";
+import { motion } from "framer-motion";
 const Header = () => {
   const ContentDiv = useRef(null);
-  
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollPosition = ContentDiv.current.scrollTop;
+  const [isVisible, setIsVisible] = useState(false);
+  const phoneNumber = "01403224486"; // Replace with your WhatsApp phone number
+  const message = "Hello, I have a question!"; // Default message
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
-  //     const sections = document.querySelectorAll("section");
+  useEffect(() => {
+    // Show the component after 5 seconds
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 2000);
 
-  //     sections.forEach((section) => {
-  //       const sectionTop = section.offsetTop;
-  //       const sectionHeight = section.offsetHeight;
-
-  //       if (
-  //         scrollPosition >= sectionTop - 50 && // Adjust the offset as needed
-  //         scrollPosition < sectionTop + sectionHeight - 50 // Adjust the offset as needed
-  //       ) {
-  //         setActiveSection(section.id);
-  //       }
-  //     });
-  //   };
-  //   ContentDiv.current.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     ContentDiv.current.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const handleUrlAnchorChange = () => {
-  //     const sectionFromUrl = window.location.hash.substr(1);
-  //     setActiveSection(sectionFromUrl);
-  //   };
-
-  //   window.addEventListener("hashchange", handleUrlAnchorChange);
-  //   return () => {
-  //     window.removeEventListener("hashchange", handleUrlAnchorChange);
-  //   };
-  // }, []);
-
-
-
+    // Cleanup the timeout if the component is unmounted before 5 seconds
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="bg-[url('/bg.png')] bg-no-repeat bg-[length:100%_100%] flex h-screen">
-     <Sidebar/>
+      <Sidebar />
 
       <div
-        className="w-full text-white text-center mx-20 overflow-scroll scrollbar-hide"
+        className="w-full text-white text-center  overflow-scroll scrollbar-hide relative"
         ref={ContentDiv}
         id="content"
       >
-        <section className="my-28">     
+        <motion.div
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 0.9, 1], y: [0, -10, 0] }} // Scaling + Vertical movement
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            repeatType: "loop",
+            ease: "easeInOut",
+            delay: 0.3,
+          }}
+          className="fixed bottom-24 right-3 z-50" // Add the fixed positioning here
+        >
+          <Link href={url} target="_blank">
+            <div
+              className="flex gap-3 justify-center items-center bg-[#252529] p-2 px-4 rounded-full border border-[#383844] 
+                      transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-[#383844] hover:border-[#252529] 
+                      hover:text-white"
+            >
+              <img src="/wp.png" className="w-[34px] h-[34px]" alt="WhatsApp" />
+              <h1 className="text-lg font-medium font-geist">Let’s Discuss</h1>
+            </div>
+          </Link>
+        </motion.div>
+        <section className="p-7  justify-center items-center gap-x-5 border-b-2 border-[#383844] flex lg:hidden">
+          <div className="bg-[url('/profilebg.png')] bg-cover bg-center h-[44px] w-[44px] flex justify-center items-center">
+            <img
+              src="/liton.jpeg"
+              className="rounded-lg h-[33px] w-[33px]"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1 className="text-lg font-medium">Liton Nandi</h1>
+            <p className="text-xs font-medium">UI/UX Designer</p>
+          </div>
+        </section>
+        <section className="fixed bottom-5 lg:left-[50%] lg:right-[50%] z-50 w-full md:px-0 px-6">
+          <Navbar />
+        </section>
+        <section id="home" className="lg:my-28 my-5 md:mx-20 mx-5">
           <Home />
         </section>
-        <section  >
-          <Manu />
-        </section>
-        <section id="education" className="mt-14 mb-28">
+        <section id="education" className="mt-14 mb-28 md:mx-20 mx-5">
           <Education />
         </section>
-        <section id="exprerience"  className="mt-14 mb-28">
+        <section id="experience" className="mt-14 mb-28 md:mx-20 mx-5">
           <Expert />
-        </section>   
-        <section id="projects" className="my-28" >
+        </section>
+        <section id="projects" className="my-28 md:mx-20 mx-5 ">
           <Achievements />
         </section>
-        <section id="workflow" className="mt-14 mb-28">
+        <section id="workflow" className="mt-14 mb-28 mx-20">
           <WorkFlow />
-        </section>    
-        <section>
+        </section>
+        <section className="bg-[#27272a]">
           <Footer />
-        </section> 
+        </section>
       </div>
     </div>
   );

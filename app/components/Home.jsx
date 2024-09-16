@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div className="relative">
-      <h1 className="text-[32px] duration-300 h-[80px]">
+      <h1 className="text-[16px] md:text-[32px] font-geist font-bold tracking-wide duration-300 lg:h-[80px]">
         <Typewriter
           options={{
             strings: [
@@ -29,7 +29,7 @@ const Home = () => {
           stiffness: 100, // Adjust stiffness for more control
         }}
       >
-        <div className="bg-[#f8f8f838] p-4 rounded-3xl h-[500px] max-w-[800px] mx-auto mt-10 relative duration-500">
+        <div className="bg-[#f8f8f838] p-4 rounded-3xl lg:h-[500px] h-[300px] lg:max-w-[800px] mx-auto mt-10 relative duration-500">
           <motion.div
             className="absolute -top-5 -left-32"
             initial={{ y: 0, scale: 1 }}

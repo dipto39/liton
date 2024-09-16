@@ -48,7 +48,7 @@ const FlowStep = ({ imageSrc, title, description, delay, isVisible }) => (
       />
     </div>
     <div>
-      <h3 className="text-2xl font-semibold leading-7 tracking-tighter">
+      <h3 className="text-2xl font-semibold leading-7 tracking-wide pb-1">
         {title}
       </h3>
       <p className="text-base font-normal text-opacity-80">{description}</p>
@@ -63,9 +63,9 @@ const WorkFlow = () => {
 
   return (
     <div ref={ref}>
-      <h1 className="heading-text">My Work Process</h1>
+      <h1 className="text-white md:text-[58px] text-[24px] text-center font-extrabold leading-[1.005] opacity-30 tracking-[1.16px] backdrop-blur-[50px]">My Work Process</h1>
       <div className="text-[#FFF] font-geist mt-[55px] mb-24 space-y-10">
-        <div className="flex items-center gap-4 mr-10">
+        <div className="flex md:flex-row flex-col items-center gap-4 lg:mr-10">
           <FlowStep
             imageSrc="/flow1.svg"
             title="User Research"
@@ -78,7 +78,7 @@ const WorkFlow = () => {
             alt="arrow"
             width={20}
             height={20}
-            className="object-fill"
+            className="object-fill md:rotate-0 rotate-90"
             style={{ width: 'auto', height: 'auto' }}
           />
           <FlowStep
@@ -94,7 +94,7 @@ const WorkFlow = () => {
             alt="arrow"
             width={20}
             height={20}
-            className="object-fill"
+            className="object-fill md:rotate-0 rotate-90"
             style={{ width: 'auto', height: 'auto' }}
           />
           <FlowStep
@@ -106,19 +106,19 @@ const WorkFlow = () => {
           />
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex md:flex-row flex-col items-center gap-4">
           <Image
             src={"/right-arrow.png"}
             alt="arrow"
             width={20}
             height={20}
-            className="object-fill"
+            className="object-fill md:rotate-0 rotate-90"
             style={{ width: 'auto', height: 'auto' }}
           />
           <FlowStep
             imageSrc="/flow4.svg"
-            title="User Research"
-            description="Gathering the Client's Business and Goals."
+            title="Usability Testing"
+            description="Design UI mockups and prototypes."
             delay={0.1}
             isVisible={isVisible} // Pass visibility state
           />
@@ -127,13 +127,13 @@ const WorkFlow = () => {
             alt="arrow"
             width={20}
             height={20}
-            className="object-fill"
+            className="object-fill md:rotate-0 rotate-90"
             style={{ width: 'auto', height: 'auto' }}
           />
           <FlowStep
             imageSrc="/flow5.svg"
-            title="Planning"
-            description="Structuring the Client's Needs."
+            title="UI Design"
+            description="Design Review with the Client."
             delay={0.3}
             isVisible={isVisible} // Pass visibility state
           />
@@ -142,13 +142,13 @@ const WorkFlow = () => {
             alt="arrow"
             width={20}
             height={20}
-            className="object-fill"
+            className="object-fill md:rotate-0 rotate-90"
             style={{ width: 'auto', height: 'auto' }}
           />
           <FlowStep
             imageSrc="/flow6.svg"
-            title="Design"
-            description="Crafting Design Solutions."
+            title="Developer Handoff"
+            description="Hand over this design for web development."
             delay={0.5}
             isVisible={isVisible} // Pass visibility state
           />

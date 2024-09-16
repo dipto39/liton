@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const Expert = () => {
   return (
     <div>
-      <h1 className="heading-text mb-14">Expert</h1>
-      <div className="flex justify-between gap-4">
+      <h1 className="text-white md:text-[58px] text-[24px] text-center font-extrabold leading-[1.005] opacity-30 tracking-[1.16px] backdrop-blur-[50px] mb-14">Expert</h1>
+      <div className="flex md:flex-row flex-col  justify-between gap-4">
         <div className="col-span-1 space-y-10 flex-1">
           <div
             className="flex items-center text-start gap-4 border-[1px]  rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
@@ -17,14 +17,14 @@ const Expert = () => {
             }}
           >
             <div>
-              <Image src="/service1.png" alt="user" width={100} height={100} />
+              <Image src="/service1.png" alt="user" width={100} height={100}  style={{ width: 'auto', height: 'auto' }}/>
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
                 Web Design
               </h1>
               <p className="text-[16px] font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
-                Get you dream website
+                Get you dream website.
               </p>
             </div>
           </div>
@@ -32,24 +32,24 @@ const Expert = () => {
             className="flex items-center text-start gap-4 border-[1px]  rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
             style={{
               borderImage:
-                "radial-gradient(circle at 0% 50%, white, #081219,#081219 ) 1",
+                "radial-gradient(circle at 0% 50%, #081219, #081219, white) 1",
                 animation: "borderImageAnimation 5s infinite" // Apply the animation here
             }}
           >
             <div>
-              <Image src="/service1.png" alt="user" width={100} height={100} />
+              <Image src="/service2.png" alt="user" width={100} height={100}  style={{ width: 'auto', height: 'auto' }}/>
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
-                Web Design
+              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              Mobile App Design 
               </h1>
               <p className="text-[16px] font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
-                Get you dream website
+              Get your user-friendly app.
               </p>
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative md:mx-0 mx-auto md:my-0 my-10">
           <motion.div
           className="relative bg-gradient-to-r from-red-500 to-orange-500 h-[254px] w-[254px] rounded-full mx-10 z-10 flex justify-center items-center"
           animate={{ rotate: 360 }}
@@ -126,18 +126,18 @@ const Expert = () => {
             style={{
               borderImage:
                 "radial-gradient(circle at 0% 50%, #081219, #081219, white) 1",
-                animation: "borderImageAnimation 5s infinite" // Apply the animation here
+                animation: "borderImageAnimationOpposite 5s infinite" // Apply the animation here
             }}
           >
             <div>
-              <Image src="/service1.png" alt="user" width={100} height={100} />
+              <Image src="/service3.png" alt="user" width={100} height={100} style={{ width: 'auto', height: 'auto' }} />
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
-                Web Design
+              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              Wireframe
               </h1>
               <p className="text-[16px] font-geist font-normal leading-[120%] tracking-[0.32px] text-white text-opacity-[0.8]">
-                Get you dream website
+              Get your informative architecture.
               </p>
             </div>
           </div>
@@ -150,14 +150,14 @@ const Expert = () => {
             }}
           >
             <div>
-              <Image src="/service1.png" alt="user" width={100} height={100} />
+              <Image src="/service4.png" alt="user" width={100} height={100} style={{ width: 'auto', height: 'auto' }} />
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
-                Web Design
+              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              Prototyping
               </h1>
               <p className="text-[16px] font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
-                Get you dream website
+              Get your visualizes design ideas.
               </p>
             </div>
           </div>
