@@ -6,10 +6,10 @@ export const Footer = () => {
     <div className="">
       <div className="w-full flex md:flex-row flex-col items-center justify-between p-5">
         <div className="text-start">
-          <h1 className="text-[#C6FCA6] font-geist text-lg my-5">
+          <h1 className="text-[#C6FCA6] font-geist text-base ">
             Get In Touch
           </h1>
-          <p className="text-white font-geist md:text-[32px] text-2xl my-5">
+          <p className="text-white font-geist md:text-[24px] text-2xl mb-2 ">
             Send an email or DM and i will get back to you asap.
           </p>
         </div>

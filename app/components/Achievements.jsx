@@ -46,7 +46,7 @@ const Achievements = () => {
       </h1>
       <div className="flex flex-wrap gap-2 justify-center lg:justify-center lg:mx-auto  my-10 px-4">
         <button
-          className={`rounded-md border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-[0_4px_20px_0_rgba(47,24,108,0.1),0_4px_20px_-1px_rgba(0,0,0,0.25)] backdrop-blur-lg px-5 py-2.5 hover:bg-slate-100 hover:text-slate-900 transition-all duration-500 ${
+          className={`rounded-md border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-[0_4px_20px_0_rgba(47,24,108,0.1),0_4px_20px_-1px_rgba(0,0,0,0.25)] backdrop-blur-lg md:px-5 px-3 md:py-2.5 py-1.5 md:text-lg text-sm md:font-samibold font-normal font-geist hover:bg-slate-100 hover:text-slate-900 transition-all duration-500 ${
             activeSection === "all"
               ? "bg-slate-100 text-slate-900"
               : "text-white"
@@ -56,7 +56,7 @@ const Achievements = () => {
           View All
         </button>
         <button
-          className={`rounded-md border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-[0_4px_20px_0_rgba(47,24,108,0.1),0_4px_20px_-1px_rgba(0,0,0,0.25)] backdrop-blur-lg px-5 py-2.5 hover:bg-slate-100 hover:text-slate-900 transition-all duration-500 ${
+          className={`rounded-md border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-[0_4px_20px_0_rgba(47,24,108,0.1),0_4px_20px_-1px_rgba(0,0,0,0.25)] backdrop-blur-lg md:px-5 px-3 md:py-2.5 py-1.5 md:text-lg text-sm md:font-samibold font-normal font-geist hover:bg-slate-100 hover:text-slate-900 transition-all duration-500 ${
             activeSection === "web-design"
               ? "bg-slate-100 text-slate-900"
               : "text-white"
@@ -66,7 +66,7 @@ const Achievements = () => {
           Web Design
         </button>
         <button
-          className={`rounded-md border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-[0_4px_20px_0_rgba(47,24,108,0.1),0_4px_20px_-1px_rgba(0,0,0,0.25)] backdrop-blur-lg px-5 py-2.5 hover:bg-slate-100 hover:text-slate-900 transition-all duration-500 ${
+          className={`rounded-md border border-white/10 bg-gradient-to-br from-white/5 to-white/0 shadow-[0_4px_20px_0_rgba(47,24,108,0.1),0_4px_20px_-1px_rgba(0,0,0,0.25)] backdrop-blur-lg md:px-5 px-3 md:py-2.5 py-1.5 md:text-lg text-sm md:font-samibold font-normal font-geist hover:bg-slate-100 hover:text-slate-900 transition-all duration-500 ${
             activeSection === "mobile-app"
               ? "bg-slate-100 text-slate-900"
               : "text-white"

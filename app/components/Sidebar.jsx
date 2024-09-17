@@ -30,7 +30,7 @@ const Sidebar = () => {
       <div className="mb-5">
         <div className="flex gap-2">
           <div className="bg-[url('/social-bg.png')] h-[50px] w-[50px] bg-cover bg-center flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-opacity-80 hover:shadow-md">
-            <Link href="" className="flex justify-center items-center">
+            <Link href="https://www.upwork.com/freelancers/~011bdb1ec9ff46f784" target="_blank" className="flex justify-center items-center">
               <img
                 src="./upwork.png"
                 className="h-[24px] w-[24px] transition-transform duration-300 ease-in-out hover:scale-110"
@@ -40,16 +40,16 @@ const Sidebar = () => {
           </div>
 
           <div className="bg-[url('/social-bg.png')] h-[50px] w-[50px] bg-cover bg-center flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-opacity-80 hover:shadow-md">
-            <Link href="" className="flex justify-center items-center">
+            <Link href="https://www.linkedin.com/in/litonnandi10/" target="_blank" className="flex justify-center items-center">
               <img
-                src="./freelancer.png"
+                src="./link.png"
                 className="h-[24px] w-[24px] transition-transform duration-300 ease-in-out hover:scale-110"
                 alt=""
               />
             </Link>
           </div>
           <div className="bg-[url('/social-bg.png')] h-[50px] w-[50px] bg-cover bg-center flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-opacity-80 hover:shadow-md">
-            <Link href="" className="flex justify-center items-center">
+            <Link href="https://dribbble.com/litonnandi10" target="_blank" className="flex justify-center items-center">
               <img
                 src="./dd.png"
                 className="h-[24px] w-[24px] transition-transform duration-300 ease-in-out hover:scale-110"
@@ -58,7 +58,7 @@ const Sidebar = () => {
             </Link>
           </div>
           <div className="bg-[url('/social-bg.png')] h-[50px] w-[50px] bg-cover bg-center flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-opacity-80 hover:shadow-md">
-            <Link href="" className="flex justify-center items-center">
+            <Link href="https://www.behance.net/litonnandi10" target="_blank" className="flex justify-center items-center">
               <img
                 src="./bh.png"
                 className="h-[24px] w-[24px] transition-transform duration-300 ease-in-out hover:scale-110"
@@ -67,7 +67,7 @@ const Sidebar = () => {
             </Link>
           </div>
           <div className="bg-[url('/social-bg.png')] h-[50px] w-[50px] bg-cover bg-center flex justify-center items-center transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-opacity-80 hover:shadow-md">
-            <Link href="" className="flex justify-center items-center">
+            <Link href="https://www.instagram.com/litonnandi10/" target="_blank" className="flex justify-center items-center">
               <img
                 src="./insta.png"
                 className="h-[24px] w-[24px transition-transform duration-300 ease-in-out hover:scale-110]"

@@ -31,7 +31,7 @@ const Home = () => {
       >
         <div className="bg-[#f8f8f838] p-4 rounded-3xl lg:h-[500px] h-[300px] lg:max-w-[800px] mx-auto mt-10 relative duration-500">
           <motion.div
-            className="absolute -top-5 -left-32"
+            className="md:block hidden absolute -top-5 -left-32"
             initial={{ y: 0, scale: 1 }}
             animate={{ y: [0, -20, 0], scale: [1, 1.1, 1] }} // Floating + Scaling
             transition={{
@@ -45,7 +45,7 @@ const Home = () => {
           </motion.div>
 
           <motion.div
-            className="absolute bottom-32 -left-[200px]"
+            className="md:block hidden absolute bottom-32 -left-[200px]"
             initial={{ rotate: 0 }}
             animate={{ rotate: [0, 10, -10, 0] }} // Rotating back and forth
             transition={{
@@ -60,7 +60,7 @@ const Home = () => {
           </motion.div>
 
           <motion.div
-            className="absolute -top-20 -right-40"
+            className="md:block hidden absolute -top-20 -right-40"
             initial={{ opacity: 0.5 }}
             animate={{ opacity: [0.5, 1, 0.5], x: [0, 20, 0] }} // Fading + Horizontal movement
             transition={{
@@ -75,7 +75,7 @@ const Home = () => {
           </motion.div>
 
           <motion.div
-            className="absolute bottom-0 -right-40"
+            className="md:block hidden absolute bottom-0 -right-40"
             initial={{ scale: 1 }}
             animate={{ scale: [1, 0.9, 1], y: [0, -10, 0] }} // Scaling + Vertical movement
             transition={{

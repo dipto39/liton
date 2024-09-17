@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 const Header = () => {
   const ContentDiv = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const phoneNumber = "01403224486"; // Replace with your WhatsApp phone number
+  const phoneNumber = "+8801403224486"; // Replace with your WhatsApp phone number
   const message = "Hello, I have a question!"; // Default message
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
@@ -50,30 +50,52 @@ const Header = () => {
             ease: "easeInOut",
             delay: 0.3,
           }}
-          className="fixed bottom-24 right-3 z-50" // Add the fixed positioning here
+          className="md:fixed md:block hidden bottom-10 right-3 z-50" // Add the fixed positioning here
         >
           <Link href={url} target="_blank">
             <div
-              className="flex gap-3 justify-center items-center bg-[#252529] p-2 px-4 rounded-full border border-[#383844] 
+              className="flex gap-3 justify-center items-center bg-[#252529] p-2 md:px-4 rounded-full border border-[#383844] 
                       transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-[#383844] hover:border-[#252529] 
                       hover:text-white"
             >
               <img src="/wp.png" className="w-[34px] h-[34px]" alt="WhatsApp" />
-              <h1 className="text-lg font-medium font-geist">Let’s Discuss</h1>
+              <h1 className="text-lg md:block hidden font-medium font-geist">
+                Let’s Discuss
+              </h1>
             </div>
           </Link>
         </motion.div>
-        <section className="p-7  justify-center items-center gap-x-5 border-b-2 border-[#383844] flex lg:hidden">
-          <div className="bg-[url('/profilebg.png')] bg-cover bg-center h-[44px] w-[44px] flex justify-center items-center">
-            <img
-              src="/liton.jpeg"
-              className="rounded-lg h-[33px] w-[33px]"
-              alt=""
-            />
+        <section className="p-7 justify-between items-center gap-x-3 border-b-2 border-[#383844] flex lg:hidden">
+          <div className="flex gap-3 items-center">
+            <div className="bg-[url('/profilebg.png')] bg-cover bg-center h-[54px] w-[54px] flex justify-center items-center">
+              <img
+                src="/liton.jpeg"
+                className="rounded-lg h-[40px] w-[40px]"
+                alt=""
+              />
+            </div>
+            <div>
+              <h1 className="text-lg font-medium">Liton Nandi</h1>
+              <p className="text-xs font-medium">UI/UX Designer</p>
+            </div>
           </div>
           <div>
-            <h1 className="text-lg font-medium">Liton Nandi</h1>
-            <p className="text-xs font-medium">UI/UX Designer</p>
+              <Link href={url} target="_blank">
+                <div
+                  className="flex gap-3 justify-center items-center bg-[#252529] p-2 md:px-4 rounded-full border border-[#383844] 
+                      transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-[#383844] hover:border-[#252529] 
+                      hover:text-white"
+                >
+                  <img
+                    src="/wp.png"
+                    className="w-[34px] h-[34px]"
+                    alt="WhatsApp"
+                  />
+                  <h1 className="text-lg md:block hidden font-medium font-geist">
+                    Let’s Discuss
+                  </h1>
+                </div>
+              </Link>
           </div>
         </section>
         <section className="fixed bottom-5 lg:left-[50%] lg:right-[50%] z-50 w-full md:px-0 px-6">
@@ -91,10 +113,10 @@ const Header = () => {
         <section id="projects" className="my-28 md:mx-20 mx-5 ">
           <Achievements />
         </section>
-        <section id="workflow" className="mt-14 mb-28 mx-20">
+        <section id="workflow" className="mt-14 mb-28 md:mx-20 mx-5">
           <WorkFlow />
         </section>
-        <section className="bg-[#27272a]">
+        <section className="">
           <Footer />
         </section>
       </div>

@@ -46,7 +46,7 @@ const Education = () => {
     <>
       <div>
         <h1 className="text-white md:text-[58px] text-[24px] text-center font-extrabold leading-[1.005] opacity-30 tracking-[1.16px] backdrop-blur-[50px] mb-6"> My Resume</h1>
-        <div className="text-[#FFF] md:text-lg text-sm font-geist font-semibold space-x-4 mb-8">
+        <div className="text-[#FFF] md:text-lg text-sm font-geist font-normal space-x-4 space-y-3 mb-8">
           <button
             onClick={() => setActiveSection("education")}
             className={`md:py-3 py-2 md:px-4 px-3 rounded-[4px] border border-[rgba(255,255,255,0.1)] bg-gradient-to-br from-[rgba(217,217,217,0.04)] to-[rgba(255,255,255,0.01)] shadow-[0_4px_20px_0_rgba(47,24,108,0.1),0_4px_20px_-1px_rgba(0,0,0,0.25)] backdrop-blur-[20px] transition-all duration-300 ease-in-out hover:bg-[#F6F5F2] hover:text-[#1A3636] hover:shadow-[0_6px_30px_0_rgba(47,24,108,0.2),0_6px_30px_-1px_rgba(0,0,0,0.3)] ${
@@ -88,7 +88,7 @@ const Education = () => {
             transition={{ duration: 0.5 }}
           >
             <div
-              className="border max-w-[1200px] mx-auto"
+              className="border  mx-auto"
               style={{
                 borderImage:
                   "radial-gradient(circle at 0% 50%, #081219, #081219, white) 1",
@@ -96,11 +96,11 @@ const Education = () => {
               }}
             >
               <div className="flex md:flex-row flex-col justify-center items-center inset-0 rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]">
-                <div className="md:h-auto md:w-auto h-[200px] w-[200px]">
+                <div className="md:h-auto md:w-auto md:mr-24">
                   <img src="/edu.png"></img>
                 </div>
-                <div className="mx-[60px] my-[40px]">
-                  <h1 className="text-white md:text-[42px] text-start text-2xl font-bold lg:mb-16 mb-5">
+                <div className="md-mx-[60px] mx-6 my-[40px]">
+                  <h1 className="text-white lg:text-[42px] md:text-[32px] text-start text-2xl font-bold lg:mb-5 mb-5">
                     My Education
                   </h1>
                   <div className="flex gap-4">
@@ -157,7 +157,7 @@ const Education = () => {
                 <div className="flex-1 flex justify-center items-center md:h-auto md:w-auto h-[200px] w-[200px]">
                   <img src="/accivement.svg" className="md:-mt-20"></img>
                 </div>
-                <div className="mx-[60px] my-[40px] flex-1 text-start">
+                <div className="md-mx-[60px] mx-6 my-[40px] flex-1 text-start">
                   <h1 className="text-white md:text-[42px] text-2xl font-bold mb-6">
                     My Experience
                   </h1>
@@ -172,7 +172,7 @@ const Education = () => {
                         <h3 className="md:text-[18px] text-sm mt-2 mb-1 font-semibold leading-[120%] tracking-[0.48px] text-white text-opacity-[0.8]">
                           2024-Present
                         </h3>
-                        <p className="text-[16px] font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
+                        <p className="md:text-[16px] text-sm font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
                           Welcome to Emerge AI, the forefront of AI-driven
                           wellness solutions. Headquartered in Beijing. At
                           Emerge AI, our mission is clear: to achieve AI-driven
@@ -187,7 +187,7 @@ const Education = () => {
                         <h3 className="md:text-[18px] text-sm mb-1 mt-2 font-semibold leading-[120%] tracking-[0.48px] text-white text-opacity-[0.8]">
                           2024-Present
                         </h3>
-                        <p className="md:text-[16px] text-xs font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
+                        <p className="md:text-[16px] text-sm font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
                           Welcome to Emerge AI, the forefront of AI-driven
                           wellness solutions. Headquartered in Beijing. At
                           Emerge AI, our mission is clear: to achieve AI-driven
@@ -204,6 +204,7 @@ const Education = () => {
 
         {/* achievements */}
         {activeSection === "achievements" && (
+          <div className="flex justify-center">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             {projects.map((project) => (
               <ProjectCard
@@ -212,6 +213,7 @@ const Education = () => {
                 activeSection={activeSection}
               />
             ))}
+          </div>
           </div>
         )}
       </div>

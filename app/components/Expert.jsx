@@ -9,41 +9,41 @@ const Expert = () => {
       <div className="flex md:flex-row flex-col  justify-between gap-4">
         <div className="col-span-1 space-y-10 flex-1">
           <div
-            className="flex items-center text-start gap-4 border-[1px]  rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
+            className="flex items-center text-start md:gap-4 border-[1px] py-3 px-3  rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
             style={{
               borderImage:
                 "radial-gradient(circle at 0% 50%, #081219, #081219, white) 1",
                 animation: "borderImageAnimation 5s infinite" // Apply the animation here
             }}
           >
-            <div>
-              <Image src="/service1.png" alt="user" width={100} height={100}  style={{ width: 'auto', height: 'auto' }}/>
+            <div className="md:h-[80px] md:w-[80px] md:mt-2">
+              <Image src="/service1.png" alt="user" width={100} height={100}  />
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              <h1 className="md:text-[20px] text-lg pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
                 Web Design
               </h1>
-              <p className="text-[16px] font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
+              <p className="md:text-[16px] text-sm font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
                 Get you dream website.
               </p>
             </div>
           </div>
           <div
-            className="flex items-center text-start gap-4 border-[1px]  rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
+            className="flex items-center text-start md:gap-4 border-[1px] py-3 px-3 rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
             style={{
               borderImage:
                 "radial-gradient(circle at 0% 50%, #081219, #081219, white) 1",
                 animation: "borderImageAnimation 5s infinite" // Apply the animation here
             }}
           >
-            <div>
-              <Image src="/service2.png" alt="user" width={100} height={100}  style={{ width: 'auto', height: 'auto' }}/>
+            <div className="md:h-[80px] md:w-[80px] md:mt-2">
+              <Image src="/service2.png" alt="user" width={100} height={100}  />
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              <h1 className="md:text-[20px] text-lg pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
               Mobile App Design 
               </h1>
-              <p className="text-[16px] font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
+              <p className="md:text-[16px] text-sm font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
               Get your user-friendly app.
               </p>
             </div>
@@ -70,7 +70,7 @@ const Expert = () => {
               className="absolute top-[-16px]"
               width={32}
               height={32}
-              style={{ width: 'auto', height: 'auto' }}
+             
             />
             <Image
               src="/ps.png"
@@ -78,7 +78,7 @@ const Expert = () => {
               className="absolute left-0 top-[20%]"
               width={32}
               height={32}
-              style={{ width: 'auto', height: 'auto' }}
+             
             />
             <Image
               src="/m.png"
@@ -86,7 +86,7 @@ const Expert = () => {
               className="absolute right-0 top-[20%]"
               width={32}
               height={32}
-              style={{ width: 'auto', height: 'auto' }}
+             
             />
             <Image
               src="/xd2.png"
@@ -94,7 +94,7 @@ const Expert = () => {
               className="absolute left-0 bottom-[20%]"
               width={32}
               height={32}
-              style={{ width: 'auto', height: 'auto' }}
+             
             />
             <Image
               src="/f.png"
@@ -102,7 +102,7 @@ const Expert = () => {
               className="absolute right-0 bottom-[20%]"
               width={32}
               height={32}
-              style={{ width: 'auto', height: 'auto' }}
+             
             />
             <Image
               src="/ai.png"
@@ -110,7 +110,7 @@ const Expert = () => {
               className="absolute bottom-[-16px]"
               width={32}
               height={32}
-              style={{ width: 'auto', height: 'auto' }}
+             
             />
            
           </motion.div>
@@ -120,43 +120,43 @@ const Expert = () => {
             </h1>
         </div>
         
-        <div className="col-span-1 space-y-10 flex-1">
+        <div className="col-span-1 space-y-10 flex-1 ">
           <div
-            className="flex items-center text-start gap-4 border-[1px]  rounded-md bg-[rgba(21,21,21,0.4)] "
+            className="flex items-center text-start md:gap-4 border-[1px] py-3 px-3 rounded-md bg-[rgba(21,21,21,0.4)] "
             style={{
               borderImage:
                 "radial-gradient(circle at 0% 50%, #081219, #081219, white) 1",
                 animation: "borderImageAnimationOpposite 5s infinite" // Apply the animation here
             }}
           >
-            <div>
-              <Image src="/service3.png" alt="user" width={100} height={100} style={{ width: 'auto', height: 'auto' }} />
+            <div className="md:h-[80px] md:w-[80px] md:mt-2">
+              <Image src="/service3.png" alt="user" width={100} height={100} />
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              <h1 className="md:text-[20px] text-lg pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
               Wireframe
               </h1>
-              <p className="text-[16px] font-geist font-normal leading-[120%] tracking-[0.32px] text-white text-opacity-[0.8]">
+              <p className="md:text-[16px] text-sm font-geist font-normal leading-[120%] tracking-[0.32px] text-white text-opacity-[0.8]">
               Get your informative architecture.
               </p>
             </div>
           </div>
           <div
-            className="flex items-center text-start gap-4 border-[1px]  rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
+            className="flex items-center text-start gap-2 border-[1px] py-3 px-3 rounded-md bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px]"
             style={{
               borderImage:
                 "radial-gradient(circle at 0% 50%, white, #081219, #081219) 1",
                 animation: "borderImageAnimation 5s infinite" // Apply the animation here
             }}
           >
-            <div>
-              <Image src="/service4.png" alt="user" width={100} height={100} style={{ width: 'auto', height: 'auto' }} />
+            <div className="md:h-[80px] md:w-[80px] md:mt-2">
+              <Image src="/service4.png" alt="user" width={100} height={100} />
             </div>
             <div className="text-start">
-              <h1 className="text-[20px] pb-[2px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
+              <h1 className="text-[20px] pb-[4px] font-geist font-semibold leading-[120%] tracking-[0.48px] text-white">
               Prototyping
               </h1>
-              <p className="text-[16px] font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
+              <p className="md:text-[16px] text-sm font-geist font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
               Get your visualizes design ideas.
               </p>
             </div>
