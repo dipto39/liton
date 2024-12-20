@@ -9,8 +9,8 @@ const Education = () => {
     {
       id: 1,
       type: "web-design",
-      name: "E-Commarce Landing Page",
-      sourse: "dribbel",
+      name: "Foundations of User Experience ...",
+      sourse: "Google",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       image: "/cer.jpeg",
       link: "#",
@@ -18,19 +18,19 @@ const Education = () => {
     {
       id: 2,
       type: "mobile-app",
-      name: "E-Commarce Landing Page",
-      sourse: "dribbel",
+      name: "Start the UX Design Process: Emp..",
+      sourse: "Google",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/cer.jpeg",
+      image: "/cer2.jpeg",
       link: "#",
     },
     {
       id: 3,
-      type: "codecayeon",
-      name: "E-Commarce Landing Page",
-      sourse: "dribbel",
+      type: "mobile-app",
+      name: "Start the UX Design Process: Emp..",
+      sourse: "Udemy",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/cer.jpeg",
+      image: "/cer3.png",
       link: "#",
     },
   ];
@@ -121,13 +121,13 @@ const Education = () => {
                       <div className="relative">
                         <span className="w-4 h-4 rounded-full bg-[#FFF] absolute -left-[24px] top-1"></span>
                         <h1 className="lg:text-[24px] text-lg font-semibold leading-[120%] tracking-[0.48px] text-[#e7e5e5]">
-                          Govt Bangabandhu College, Khulna
+                        Govt. Majeed Memorial City College, Khulna
                         </h1>
                         <h3 className="md:text-[18px] text-sm mt-2 mb-1 font-semibold leading-[120%] tracking-[0.48px] text-white text-opacity-[0.8]">
-                          BBA in Marketing
+                        Higher Secondary Certificate
                         </h3>
                         <p className="md:text-[16px] text-xs font-normal leading-[150%] tracking-[0.32px] text-white text-opacity-[0.8]">
-                          2017-2021
+                        2014-2016
                         </p>
                       </div>
                     </div>

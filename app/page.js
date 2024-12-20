@@ -52,7 +52,7 @@ const Header = () => {
           }}
           className="md:fixed md:block hidden bottom-10 right-3 z-50" // Add the fixed positioning here
         >
-          <Link href={url} target="_blank">
+          <Link href={url} target="_blank" className="cursor-pointer">
             <div
               className="flex gap-3 justify-center items-center bg-[#252529] p-2 md:px-4 rounded-full border border-[#383844] 
                       transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-[#383844] hover:border-[#252529] 
@@ -80,7 +80,7 @@ const Header = () => {
             </div>
           </div>
           <div>
-              <Link href={url} target="_blank">
+              <Link href={url} target="_blank" className="cursor-pointer">
                 <div
                   className="flex gap-3 justify-center items-center bg-[#252529] p-2 md:px-4 rounded-full border border-[#383844] 
                       transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-[#383844] hover:border-[#252529] 

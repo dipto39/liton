@@ -5,8 +5,8 @@ const projectData = [
   {
     id: 1,
     type: "web-design",
-    name: "E-Commarce Landing Page",
-    sourse: "dribbel",
+    name: "Foundations of User Experience ...",
+    sourse: "Google",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/cer.jpeg",
     link: "#",
@@ -14,10 +14,19 @@ const projectData = [
   {
     id: 2,
     type: "mobile-app",
-    name: "E-Commarce Landing Page",
-    sourse: "dribbel",
+    name: "Start the UX Design Process: Emp..",
+    sourse: "Google",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/cer.jpeg",
+    image: "/cer2.jpeg",
+    link: "#",
+  },
+  {
+    id: 3,
+    type: "mobile-app",
+    name: "Start the UX Design Process: Emp..",
+    sourse: "Udemy",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: "/cer3.png",
     link: "#",
   },
 ];

@@ -91,7 +91,7 @@ const Home = () => {
 
           <iframe
             className="h-full w-full rounded-3xl"
-            src="https://www.youtube.com/embed/ihPTNp7370s?si=LcLQwLK8cLqOVd06"
+            src="https://www.youtube.com/embed/Ia_SfTEGS24?si=gmPOTBB5lX8sAmxU"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

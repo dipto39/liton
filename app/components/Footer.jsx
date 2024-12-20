@@ -15,9 +15,8 @@ export const Footer = () => {
         </div>
 
         <div>
-          {" "}
           <a
-            href="/cer.jpeg"
+            href="./resources/cv.pdf"
             download
             className="bg-[#4f4f55] text-center py-4 text-[#FFF] w-[280px] text-lg flex items-center justify-center gap-2 rounded font-medium font-geist download-button"
           >
